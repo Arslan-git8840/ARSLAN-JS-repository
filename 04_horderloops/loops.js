@@ -35,3 +35,12 @@
 // {
 //     console.log('hello');
 // }while(a>3);
+
+// for in loop for objects
+const myobj = {
+    name:'arslan',
+    age:23
+}
+for (const key in myobj) {
+    // console.log(key, ':-', myobj[key])
+}
