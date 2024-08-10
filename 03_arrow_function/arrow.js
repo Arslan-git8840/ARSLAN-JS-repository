@@ -60,7 +60,7 @@
 // console.log(obj())
 
 
-//*******iife */  (function defn)(function call);
+//*******iife */  (function defn)(function call/execute);
 
 (function add(a,b)
 {
