@@ -15,4 +15,13 @@ for (const key in myobj) {
     // console.log(key ,myobj[key]);
     }
 
+// iterting in object
+const  object= {
+    'name':'arslan',
+    age:23
+}
+for (const key in object) {
+    // console.log(key, object[key]);
+}
+
 
