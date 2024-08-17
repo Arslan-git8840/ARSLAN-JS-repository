@@ -38,12 +38,13 @@
 
 
 
+
 //*** queryselector all, it will return all the elements of the type., return nodelist
   const cont= document.querySelectorAll("h4")// we can use .class, #id etc
     // console.log(cont[2]);
     // console.log(cont);
     cont[2].style.backgroundColor="red"
-    console.log(cont)
+    // console.log(cont)
 
 
 
@@ -51,11 +52,13 @@
 //*** using getelementByclassName it will return html collection
  const c= document.getElementsByClassName("heading")
  const arr= Array.from(c)
-//  console.log(arr[3].style.color="orange");
+//  console.log(arr[3].style.color="yellow");
 //  arr.forEach( (item)=>
 // {
 //     item.style.color='red'
 // } )
+arr[1].style.color="yellow"
+
  
  
 //  console.log(c[3]);
