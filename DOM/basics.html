@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div" class="box" style="color:brown">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam libero animi eos a deserunt sit ipsam eum iste labore autem, quasi fugiat, tempore maiores nemo pariatur laudantium aut magni tenetur!</div>
+    <div class="container">
+        <h4 class="heading">h</h4>
+        <h4 class="heading">e</h4>
+        <h4 class="heading">l</h4>
+        <h4 class="heading">o</h4>
+    </div>
+</body>
+<script>
+
+//** selecting an element using getElementById 
+
+    const div = document.getElementById("div")
+    // console.log(div)
+    // console.log(div.id);
+    // console.log(div.className);
+    // console.log(div.textContent);
+    // console.log(div.innerHTML);
+    // console.log(div.innerText);
+    // console.log(div.getAttribute('id'))
+    // console.log(div.getAttribute('class'))
+    // div.setAttribute('title','msg')
+    // console.log(div)
+
+
+//**** using query selector, it will return only single element and return first div element always among many div elements.
+
+    const box= document.querySelector("div")// we can also use #id, .className , tagname etc
+    // console.log(box);
+
+
+
+//*** queryselector all, it will return all the elements of the type., return nodelist
+  const cont= document.querySelectorAll("h4")// we can use .class, #id etc
+    // console.log(cont[2]);
+    // console.log(cont);
+    cont[2].style.backgroundColor="red"
+    console.log(cont)
+
+
+
+
+//*** using getelementByclassName it will return html collection
+ const c= document.getElementsByClassName("heading")
+ const arr= Array.from(c)
+//  console.log(arr[3].style.color="orange");
+//  arr.forEach( (item)=>
+// {
+//     item.style.color='red'
+// } )
+ 
+ 
+//  console.log(c[3]);
+//  console.log(c);
+
+ 
+    
+
+
+
+
+
+    
+    
+</script>
+</html>

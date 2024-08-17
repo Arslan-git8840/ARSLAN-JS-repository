@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create html element</title>
+</head>
+<body>
+    <h4>h</h4>
+    <h4>e</h4>
+    <h4>l</h4>
+    <h4>o</h4>
+</body>
+<script>
+    const h= document.querySelector("h4")
+  const div=document.createElement('div')
+  div.innerText="hello js user"
+  div.setAttribute("id","div")
+//  document.body.appendChild(div)
+
+//*** creating a textNode
+const text=document.createTextNode("  , hello this is a  textNode")
+div.appendChild(text)
+document.body.appendChild(div)
+// console.log(div);
+
+</script>
+</html>
