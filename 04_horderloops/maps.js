@@ -2,7 +2,7 @@ const mymap = new Map();
 mymap.set("IN","INDIA");
 mymap.set("AU","AUSTRIA");
 mymap.set("ZU","ZURICH");
-//console.log(mymap);
+console.log(mymap);
 // console.log(mymap.clear);
 // console.log(mymap.get("IN"));
 // console.log(mymap.size);
@@ -16,9 +16,9 @@ for (const [key,value] of mymap) {
 }
 // converting a map into array
 const array = Array.from(mymap);
-// console.log(array);
+console.log(array);
 const flatarray= array.flat();
-// console.log(flatarray);
+console.log(flatarray);
 for (const arr of array) {
     console.log(arr);
 }

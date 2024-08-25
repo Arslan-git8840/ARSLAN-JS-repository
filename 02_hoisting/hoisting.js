@@ -6,12 +6,12 @@
 // }
 // greet();
 
-
-// const myfun=function()
-// {
-//     console.log('hello js');
-// }
-// ();
+// myfun(); error
+const myfun=function()
+{
+    console.log('hello js');
+}
+myfun();
 
 
 // console.log(a);

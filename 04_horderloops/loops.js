@@ -48,15 +48,14 @@
 // for in loop in array
 const myarray=['hello',2,3,4,6];
 for (const key in myarray) {
-    // console.log(key); it will print index of the array.
-    // console.log(myarray[key]); it will print the items of the array.
-}
+   // console.log(myarray[key]);it will print the items of the array. 
+ //console.log(key); it will print index of the array.
+ }
 
 const mymap= new Map()
 mymap.set('in','india');
 mymap.set('uk','utr');
 for (const key in mymap) {
-    // console.log(mymap);
-    
+    console.log(key);
 }
 
