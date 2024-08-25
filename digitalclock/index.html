@@ -10,9 +10,12 @@
   <div class="clock" id="clk"></div>
 </body>
 <script>
-    const time= new Date();
-    const clock=document.querySelector('.clock')
-    setInterval( function(){}, 1000)
-    
+
+    let clock=document.querySelector('.clock')
+    setInterval( function(){
+      let time= new Date();
+      clock.innerHTML=time.toLocaleTimeString()
+    }, 1000)
+
 </script>
 </html>
