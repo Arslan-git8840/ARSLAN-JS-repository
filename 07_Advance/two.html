@@ -1,0 +1,22 @@
+<script>var xhr = new XMLHttpRequest();
+xhr.open('GET', 'https://api.github.com/users/hiteshchoudhary', true);
+
+xhr.onload = function () {
+    if (xhr.status === 200) {
+        var response = JSON.parse(xhr.responseText); // Parse the JSON response
+        var avatarUrl = response.avatar_url; // Extract the avatar URL
+
+        var img = new Image();
+        img.src = avatarUrl; // Set the image source to the avatar URL
+        document.body.appendChild(img); // Append the image to the body or use it as needed
+    } else {
+        console.error('Failed to fetch data:', xhr.status, xhr.statusText);
+    }
+};
+
+// xhr.onerror = function () {
+//     console.error('Request error');
+// };
+
+xhr.send();
+</script>

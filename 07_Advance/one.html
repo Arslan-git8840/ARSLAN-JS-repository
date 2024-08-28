@@ -10,28 +10,25 @@
 </body>
 <script>
 
-let xhr= new XMLHttpRequest();
-let url = "https://api.github.com/users/Arslan-git8840";
+// let xhr= new XMLHttpRequest();
+// let url = "https://api.github.com/users/Arslan-git8840";
 
-xhr.open('GET', url, true);
+// xhr.open('GET', url, true);
 
-xhr.onreadystatechange= function()
-{
-    if (xhr.readyState===4) {
-        let data = xhr.responseText
-        // console.log(typeof data)// string object
-        data =JSON.parse(data); // converts into object
-        // console.log(typeof data)
-        console.log(data.name);
-        console.log(data.location);
-        console.log(data.id);
-    }
-}
+// xhr.onreadystatechange= function()
+// {
+//     if (xhr.readyState===4) {
+//         let data = xhr.responseText
+//         // console.log(typeof data)// string object
+//         data =JSON.parse(data); // converts into object
+//         // console.log(typeof data)
+//         console.log(data.name);
+//         console.log(data.location);
+//         console.log(data.id);
+//     }
+// }
 
-xhr.send();
-
-
-
+// xhr.send();
 
 </script>
 </html>
