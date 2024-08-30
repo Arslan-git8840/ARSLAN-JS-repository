@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API IMAGE</title>
+</head>
+<body>
+
+</body>
+<script>
+
+// creating a http instance or object
+let xhr= new XMLHttpRequest();
+
+// getting the url 
+let url = "http://api.github.com/users/hiteshchoudhary";
+
+// creating a request
+xhr.open('GET', url, true);
+
+xhr.onreadystatechange=function()
+{
+    if (readyState===4) {
+        if (status===200) {
+            let data = JSON.parse(xhr.responseText);
+            console.log(data);
+            let img= new IMAGE();
+            img.src=data.avatar_url;
+            img.height= '200px';
+            document.body,appendChild(img);
+        }
+    }
+})
+// sending the rqst
+xhr.send();
+
+</script>
+</html>
